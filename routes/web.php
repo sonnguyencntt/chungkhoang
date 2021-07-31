@@ -19,25 +19,32 @@ Route::get('/dich-vu','ServiceController@index')->name('serveice.index');
 
 Route::group(['prefix' => 'manage'], function(){
 
+    Route::get('/','Manage\DashboardController@index')->name('dashboard.index');
+
     Auth::routes(['register' => false]);
 
+    Route::group(['prefix'=> 'auth'], function(){
+        Route::get('/','Manage\AuthController@index')->name('manage.auth.index');
+      
+    });
+
     Route::group(['prefix'=> 'contact'], function(){
-        Route::get('/','Manage/ContactController@index')->name('manage.contact.index');
-        Route::delete('/{contact}','Manage/ContactController@destroy')->name('manage.contact.destroy');
+        Route::get('/','Manage\ContactController@index')->name('manage.contact.index');
+        Route::delete('/{contact}','Manage\ContactController@destroy')->name('manage.contact.destroy');
     });
 
     Route::group(['prefix'=> 'profile'], function(){
-        Route::get('/','Manage/ProfileController@index')->name('manage.profile.index');
-        Route::put('/{profile}','Manage/ProfileController@update')->name('manage.profile.update');
+        Route::get('/','Manage\ProfileController@index')->name('manage.profile.index');
+        Route::put('/{profile}','Manage\ProfileController@update')->name('manage.profile.update');
     });
 
     Route::group(['prefix'=> 'blog'], function(){
-        Route::get('/','Manage/BlogController@index')->name('manage.blog.index');
-        Route::post('/','Manage/BlogController@store')->name('manage.blog.store');
-        Route::get('/create','Manage/BlogController@create')->name('manage.blog.create');
-        Route::get('/{blog}/edit','Manage/BlogController@edit')->name('manage.blog.edit');
-        Route::put('/{blog}','Manage/BlogController@update')->name('manage.blog.update');
-        Route::delete('/{blog}','Manage/BlogController@destroy')->name('manage.blog.destroy');
+        Route::get('/','Manage\BlogController@index')->name('manage.blog.index');
+        Route::post('/','Manage\BlogController@store')->name('manage.blog.store');
+        Route::get('/create','Manage\BlogController@create')->name('manage.blog.create');
+        Route::get('/{blog}/edit','Manage\BlogController@edit')->name('manage.blog.edit');
+        Route::put('/{blog}','Manage\BlogController@update')->name('manage.blog.update');
+        Route::delete('/{blog}','Manage\BlogController@destroy')->name('manage.blog.destroy');
     });
    
 });
