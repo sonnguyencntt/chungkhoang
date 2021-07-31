@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Manage;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class ProfileController extends Controller
+class CategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class ProfileController extends Controller
      */
     public function index()
     {
-        return \view("pages.admin.profile.index");
+        return \view("pages.admin.category.index");
 
     }
 
@@ -25,7 +25,8 @@ class ProfileController extends Controller
      */
     public function create()
     {
-        //
+        return \view("pages.admin.category.create");
+
     }
 
     /**
@@ -58,7 +59,8 @@ class ProfileController extends Controller
      */
     public function edit($id)
     {
-        //
+        return \view("pages.admin.category.edit");
+
     }
 
     /**

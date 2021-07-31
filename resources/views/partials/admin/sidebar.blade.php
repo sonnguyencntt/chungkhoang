@@ -10,8 +10,41 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu tree" data-widget="tree" >
         <li id="1" class="">
-            <a href="{{ route('dashboard.index') }}">
+            <a href="{{ route('manage.dashboard.index') }}">
                 <i class="fa fa-dashboard"></i> <span>Bảng điều khiển</span>
+            </a>
+        </li>
+        <li id="1" class="">
+            <a href="{{ route('manage.contact.index') }}">
+                <i class="fa fa-dashboard"></i> <span>Danh sách tư vấn</span>
+            </a>
+        </li>
+        <li id="1" class="">
+            <a href="{{ route('manage.category.index') }}">
+                <i class="fa fa-dashboard"></i>               
+                  <span>Danh mục</span>
+
+            </a>
+        </li>
+     
+        <li class="treeview " id="userMainNav">
+            <a href="#">
+                <i class="fa fa-files-o"></i>
+                <span>Bài viết</span>
+                <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+            <ul class="treeview-menu">
+                <li id="createUserSubNav" class=" "><a href="{{ route('manage.blog.index') }}"><i
+                            class="fa fa-circle-o"></i>Danh sách</a></li>
+                <li id="createUserSubNav" class=" "><a href="{{ route('manage.blog.create') }}"><i
+                            class="fa fa-circle-o"></i>Thêm mới</a></li>
+            </ul>
+        </li>
+        <li id="1" class="">
+            <a href="{{ route('manage.profile.index') }}">
+                <i class="fa fa-dashboard"></i> <span>Hồ sơ</span>
             </a>
         </li>
             {{-------------------------------Quản lý danh sách----------------------------------}}

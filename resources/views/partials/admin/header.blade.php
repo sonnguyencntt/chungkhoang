@@ -3,12 +3,12 @@
   <!-- Logo -->
   <a href="index2.html" class="logo">
     <!-- mini logo for sidebar mini 50x50 pixels -->
-    <span class="logo-mini">  <img style="width:45px" src="assets/image/admin.png" alt="">
+    <span class="logo-mini">  <img style="width:45px" src={{asset("assets/image/admin.png")}} alt="">
     </span>
     <!-- logo for regular state and mobile devices -->
     <span class="logo-lg"> <img style="width: 37px;
       padding: 0px !important;
-  " src="assets/image/admin.png" alt="">A<b style="vertical-align: middle">DMIN</b></span>
+  " src={{asset("assets/image/admin.png")}} alt=""><b style="vertical-align: middle">DMIN</b></span>
   </a>
   <!-- Header Navbar: style can be found in header.less -->
   <nav class="navbar navbar-static-top">
@@ -28,7 +28,13 @@
 
         </li> 
         <!-- User Account: style can be found in dropdown.less -->
- 
+        <li class="dropdown user user-menu">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="padding-top: 15px !important">
+           
+            <span class="hidden-xs"><b>XIN CHÀO </b> Alexander nps Pierce</span>
+          </a>
+      
+        </li>
         <!-- Control Sidebar Toggle Button -->
        
       </ul>

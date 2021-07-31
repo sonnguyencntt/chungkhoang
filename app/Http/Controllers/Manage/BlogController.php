@@ -14,7 +14,8 @@ class BlogController extends Controller
      */
     public function index()
     {
-        //
+        return \view("pages.admin.blog.index");
+
     }
 
     /**
@@ -24,7 +25,7 @@ class BlogController extends Controller
      */
     public function create()
     {
-        //
+        return \view("pages.admin.blog.create");
     }
 
     /**
@@ -57,7 +58,7 @@ class BlogController extends Controller
      */
     public function edit($id)
     {
-        //
+        return \view("pages.admin.blog.edit");
     }
 
     /**

@@ -4,12 +4,12 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Manage
-        <small>Dshboard</small>
+            Quản lý
+        <small>Bảng điều khiển</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Dashboard</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i>Trang chủ</a></li>
+        <li class="active">Bảng điều khiển</li>
       </ol>
     </section>
 
@@ -27,12 +27,12 @@
               <div class="inner">
                 <h3>1</h3>
 
-                <p>Total Singers</p>
+                <p>Khách tư vấn</p>
               </div>
               <div class="icon">
                 <i class="ion ion-bag"></i>
               </div>
-              <a href="singer.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+              <a href="{{ route('manage.contact.index') }}" class="small-box-footer">Chi tiết <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -42,12 +42,12 @@
               <div class="inner">
                 <h3>5</h3>
 
-                <p>Total Songs</p>
+                <p>Danh mục</p>
               </div>
               <div class="icon">
                 <i class="ion ion-stats-bars"></i>
               </div>
-              <a href="song_category.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+              <a href="{{ route('manage.category.index') }}" class="small-box-footer">Chi tiết <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -57,12 +57,12 @@
               <div class="inner">
                 <h3>4</h3>
 
-                <p>Total Categorys</p>
+                <p>Tài khoản</p>
               </div>
               <div class="icon">
                 <i class="ion ion-android-people"></i>
               </div>
-              <a href="song.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+              <a href="{{ route('manage.blog.index') }}" class="small-box-footer">Chi tiết<i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -72,12 +72,17 @@
               <div class="inner">
                 <h3>9</h3>
 
-                <p>Total Users</p>
+                <p>Bài viết
+
+
+
+                     
+                </p>
               </div>
               <div class="icon">
                 <i class="ion ion-android-home"></i>
               </div>
-              <a href="singer.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+              <a href="{{ route('manage.profile.index') }}" class="small-box-footer">Chi tiết <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
