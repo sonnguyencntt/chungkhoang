@@ -6,14 +6,33 @@
     </div>
     <!-- /.login-logo -->
     <div class="login-box-body">
+      
       <p class="login-box-msg">Sign in to start your session</p>
-      <p style="color :  red"></p>
+      @if(\Session::has('flag'))
+      <div class="alert alert-danger">
+        <ul>
+                <li>{{ \Session::get('message') }}</li>
+            
+        </ul>
+    </div>
+    <br>
+      @endif
+      @if ($errors->any())
+      <div class="alert alert-danger">
+          <ul>
+              @foreach ($errors->all() as $error)
+                  <li>{{ $error }}</li>
+              @endforeach
+          </ul>
+      </div>
+  @endif
+    
   
   
-        <?php var_dump($errors->all()) ?>
+        
   
       
-      <form action="{{route('login')}}" method="post">
+      <form action="{{route('manage.auth.login')}}" method="post">
         <div class="form-group has-feedback">
           <input type="email" class="form-control" name="email" id="email" placeholder="Email" autocomplete="off" required>
           <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
@@ -26,7 +45,7 @@
           <div class="col-xs-8">
             <div class="checkbox icheck">
               <label>
-                <!-- <input type="checkbox"> Remember Me -->
+              <a href="{{route('manage.auth.forgot')}}">Forgot password ?</a>
               </label>
             </div>
           </div>

@@ -13,7 +13,7 @@ class ContactController extends Controller
      */
     public function index()
     {
-        return \view("pages.admin.contact.index");
+        return \view("pages.contact.index");
     }
 
     /**

@@ -13,7 +13,7 @@
 Route::get('/','HomeController@index')->name('home.index');
 Route::get('/gioi-thieu','IntroduceController@index')->name('introduce.index');
 Route::get('/lien-he','ContactController@index')->name('contact.index');
-Route::get('/dich-vu','ServiceController@index')->name('serveice.index');
+Route::get('/bai-viet','BlogController@index')->name('blog.index');
 
 
 
@@ -21,10 +21,15 @@ Route::group(['prefix' => 'manage'], function(){
 
     Route::get('/','Manage\DashboardController@index')->name('manage.dashboard.index');
 
-    Auth::routes(['register' => false]);
 
     Route::group(['prefix'=> 'auth'], function(){
         Route::get('/','Manage\AuthController@index')->name('manage.auth.index');
+        Route::post('/login','Manage\AuthController@postLogin')->name('manage.auth.login');
+        Route::get('/logout','Manage\AuthController@postLogout')->name('manage.auth.logout');
+        Route::get('/forgot','Manage\AuthController@forgot')->name('manage.auth.forgot');
+        Route::post('/forgot','Manage\AuthController@postEmail')->name('manage.auth.forgot');
+
+
       
     });
 

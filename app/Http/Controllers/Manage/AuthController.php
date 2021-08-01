@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Manage;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
@@ -22,64 +23,43 @@ class AuthController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        //
+    public function postLogin(Request $req){
+   
+        $this->validate($req,
+        [
+            'email' => "required|email",
+            'password'=> "required|min:5|max:20"
+        ],
+        [
+            'email.required' => "Vui lòng nhập Email",
+            "email.email" => "Email không đúng định dạng",
+            "password.required" => "Vui lòng nhập mật khẩu",
+            "password.min" => "Mật khẩu ít nhất 6 kí tự",
+            "password.max" => "Mật khẩu không quá 20 kí tự"
+        ]);
+        
+        $credentials = array("email"=>$req->email , "password"=>$req->password);
+        if(\Auth::attempt($credentials)){
+            
+            return redirect()->route("manage.dashboard.index");
+
+        }
+        else
+        {
+            return \redirect()->back()->with(["flag"=>"danger" , "message"=>"Đăng nhập không thành công"]);        }
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
+    public function postLogout(){
+        \Auth::logout();
+        return redirect()->route("manage.auth.index");
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
+    public function forgot()
     {
-        //
+        return \view("pages.admin.auth.forgot");
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
+    public function postEmail(){
+        
     }
 }

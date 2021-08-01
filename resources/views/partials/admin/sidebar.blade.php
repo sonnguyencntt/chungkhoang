@@ -70,7 +70,7 @@
    
 
         <li id="1" class="">
-            <a href="javascript:void(0);">
+            <a href="{{ route('manage.auth.logout') }}">
                 <i class="glyphicon glyphicon-log-out"></i> <span>Đăng xuất</span>
             </a>
         </li>
