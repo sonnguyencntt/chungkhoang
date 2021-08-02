@@ -9,11 +9,13 @@
                     </div>
                     <div class="col-lg-6 header-top-right-part text-right">
                         <ul class="social-links">
-                            <li><a href="https://www.facebook.com/Ch%C6%B0%CC%81ng-khoa%CC%81n-m%C3%B4%CC%83i-nga%CC%80y-101496678877948"><i class="fa fa-facebook-f"></i></a></li>
-                            <li><a href="https://www.facebook.com/Ch%C6%B0%CC%81ng-khoa%CC%81n-m%C3%B4%CC%83i-nga%CC%80y-101496678877948"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                         </ul>
                         <div style="display: inline-block; margin-left: 10px">
-                            <span class="address"><i class="webexflaticon flaticon-email"></i> quandh1@ssi.com.vn</span>
+                            <span class="address"><i class="webexflaticon flaticon-email"></i> hoangquan@gmail.com</span>
 
                         </div>
                     </div>

@@ -422,7 +422,7 @@
                                                                     <div class="team-upper-part">
 
                                                                         <img class="img-full"
-                                                                            src="images/Picture1.jpg" alt="">
+                                                                            src="css/uploads/2020/02/team3.jpg" alt="">
 
                                                                         <ul class="social-list vertical-style list-sm">
 
@@ -452,7 +452,7 @@
                                                                                 href="../team/pham-thanh-hung/index.html">Phạm Nguyễn Hoàng Nam
                                                                                 </a></h4>
 
-                                                                        <h6 class="designation">Chuyên viên tư vấn</h6>
+                                                                        <h6 class="designation">Chuyên </h6>
 
                                                                     </div>
 

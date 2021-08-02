@@ -64,7 +64,7 @@
                                                                     data-paddingright="[0,0,0,0]"
                                                                     data-paddingbottom="[0,0,0,0"
                                                                     data-paddingleft="[0,0,0,0]"
-                                                                    style="z-index: 16; white-space: nowrap; font-family: Arial !important">Chào mừng đến
+                                                                    style="z-index: 16; white-space: nowrap; fo">Chào mừng đến
                                                                     với <br>Tư vấn chứng khoán Hoàng Quân </div>
                                                                 <!-- LAYER NR. 2 -->
                                                                 <div class="tp-caption sub-title color-white"

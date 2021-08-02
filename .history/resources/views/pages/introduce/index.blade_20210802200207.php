@@ -422,7 +422,7 @@
                                                                     <div class="team-upper-part">
 
                                                                         <img class="img-full"
-                                                                            src="images/Picture1.jpg" alt="">
+                                                                            src="../images/Picture1.jpg" alt="">
 
                                                                         <ul class="social-list vertical-style list-sm">
 

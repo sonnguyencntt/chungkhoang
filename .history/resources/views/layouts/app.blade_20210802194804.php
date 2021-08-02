@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="#">
-    <title>Chứng khoán Hoàng Quân &#8211; Tư vấn đầu tư chứng khoán uy tín</title>
+    <title>Chứng khoán  &#8211; Tư vấn đầu tư chứng khoán uy tín</title>
 
     <link rel='stylesheet' id='enexus-style-css' href='css/themes/adsmo/assets/css/styleb1bb.css?ver=5.3.8'
         media='all' />

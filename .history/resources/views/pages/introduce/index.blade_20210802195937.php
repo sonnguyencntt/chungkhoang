@@ -403,10 +403,10 @@
                                                                     <div class="team-bottom-part text-center">
 
                                                                         <h4 class="team-title mrb-5"><a
-                                                                                href="../team/madison-nguyen-2/index.html">Đỗ Hoàng Quân
+                                                                                href="../team/madison-nguyen-2/index.html">Madison
                                                                                 </a></h4>
 
-                                                                        <h6 class="designation">Chuyên viên tư vấn</h6>
+                                                                        <h6 class="designation">Nhân viên tư vấn</h6>
 
                                                                     </div>
 
@@ -422,7 +422,7 @@
                                                                     <div class="team-upper-part">
 
                                                                         <img class="img-full"
-                                                                            src="images/Picture1.jpg" alt="">
+                                                                            src="css/uploads/2020/02/team3.jpg" alt="">
 
                                                                         <ul class="social-list vertical-style list-sm">
 
@@ -449,10 +449,10 @@
                                                                     <div class="team-bottom-part text-center">
 
                                                                         <h4 class="team-title mrb-5"><a
-                                                                                href="../team/pham-thanh-hung/index.html">Phạm Nguyễn Hoàng Nam
-                                                                                </a></h4>
+                                                                                href="../team/pham-thanh-hung/index.html">Phạm
+                                                                                Thanh Hùng</a></h4>
 
-                                                                        <h6 class="designation">Chuyên viên tư vấn</h6>
+                                                                        <h6 class="designation">Giám đốc tài chính</h6>
 
                                                                     </div>
 

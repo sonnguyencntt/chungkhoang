@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="#">
-    <title>Chứng khoán Hoàng Quân &#8211; Tư vấn đầu tư chứng khoán uy tín</title>
+    <title>Hoàng Quân COMPANY &#8211; Tư vấn đầu tư chứng khoán uy tín</title>
 
     <link rel='stylesheet' id='enexus-style-css' href='css/themes/adsmo/assets/css/styleb1bb.css?ver=5.3.8'
         media='all' />
@@ -22,7 +22,7 @@
         media='all' />
     <link rel='stylesheet' id='navigation-css'
         href='css/themes/adsmo/assets/revolution/css/navigationb1bb.css?ver=5.3.8' media='all' />
-    <link rel='stylesheet' href={{asset('css/style.css')}}>
+    <link rel='stylesheet' href={{asset()}}'css/style.css'>
 
 
 </head>

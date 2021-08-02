@@ -422,7 +422,7 @@
                                                                     <div class="team-upper-part">
 
                                                                         <img class="img-full"
-                                                                            src="images/Picture1.jpg" alt="">
+                                                                            src="https://www.facebook.com/Ch%C6%B0%CC%81ng-khoa%CC%81n-m%C3%B4%CC%83i-nga%CC%80y-101496678877948" alt="">
 
                                                                         <ul class="social-list vertical-style list-sm">
 
