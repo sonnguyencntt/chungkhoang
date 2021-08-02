@@ -4,7 +4,9 @@ namespace App\Http\Controllers\Manage;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Notifications\SendEmailResetPassword;
 use Illuminate\Support\Facades\Auth;
+use App\User;
 
 class AuthController extends Controller
 {
@@ -59,7 +61,43 @@ class AuthController extends Controller
         return \view("pages.admin.auth.forgot");
     }
 
-    public function postEmail(){
+    public function postEmail(Request $req){
+        $this->validate($req,
+        [
+            'email' => "required|email",
+        ],
+        [
+            'email.required' => "Vui lòng nhập Email",
+            "email.email" => "Email không đúng định dạng",
+        ]);
+        $user =  User::where('email', $req->email)->first();
         
+        if($user){
+            $random = \Str::random(8);
+            $newPassword = \bcrypt($random);
+            $infoResetPassord = [
+                'user' => $user,
+                'newpassword' => $random
+            ];
+           
+        try {
+            User::where('email', $req->email)
+            ->update(['mat_khau' => $newPassword]);
+            $user->notify(new SendEmailResetPassword($infoResetPassord));
+
+            return  \redirect()->back()->with(["flag"=>"success" , "message"=>"Gửi Email thành công , Vui lòng kiểm tra email"]);
+
+
+        } catch (\Throwable $th) {
+            return \redirect()->back()->with(["flag"=>"danger" , "message"=>"Đã xãy ra lỗi, vui lòng thử lại sau 30 phút"]); 
+        }
+            
+
+            
+        }
+        else
+        {
+            return \redirect()->back()->with(["flag"=>"danger" , "message"=>"Email không tồn tại trong danh sách"]);  
+        }
     }
 }

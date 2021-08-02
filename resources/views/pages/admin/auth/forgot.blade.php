@@ -9,7 +9,7 @@
       
       <p class="login-box-msg">Vui lòng điền Email mà bạn đã đăng kí trước đó</p>
       @if(\Session::has('flag'))
-      <div class="alert alert-danger">
+      <div class="alert alert-{{\Session::get('flag')}}">
         <ul>
                 <li>{{ \Session::get('message') }}</li>
             
@@ -32,7 +32,7 @@
         
   
       
-      <form action="{{route('manage.auth.login')}}" method="post">
+      <form action="{{route('manage.auth.forgot')}}" method="post">
         <div class="form-group has-feedback">
           <input type="email" class="form-control" name="email" id="email" placeholder="Email" autocomplete="off" required>
           <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
@@ -41,14 +41,15 @@
         <div class="row">
           <div class="col-xs-8">
             <div class="checkbox icheck">
-              <label>
-                <!-- <input type="checkbox"> Remember Me -->
-              </label>
+              <a href="{{route('manage.auth.index')}}">Quay về</a>
+
             </div>
           </div>
           <!-- /.col -->
           <div class="col-xs-4">
-            <button type="submit" class="btn btn-primary btn-block btn-flat">Send Mail</button>
+           
+
+            <button type="submit" class="btn btn-primary btn-block btn-flat">Gửi Mail</button>
           </div>
           <!-- /.col -->
         </div>
