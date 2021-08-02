@@ -14,7 +14,7 @@
     <link rel='stylesheet' id='enexus-style-css' href='css/themes/adsmo/assets/css/styleb1bb.css?ver=5.3.8'
         media='all' />
     <link rel='stylesheet' id='enexus-fonts-css'
-        href='http://fonts.googleapis.com/css?family=Montserrat%3A300%2C400%2C500%2C600%2C700%2C800%2C900%26display%3Dswap%7CPlayfair%2BDisplay%3A400%2C700%2C900%26subset%3Dlatin%2Clatin-ext&amp;ver=1.0.0'
+        href='https://fonts.googleapis.com/css?family=Montserrat%3A300%2C400%2C500%2C600%2C700%2C800%2C900%26display%3Dswap%7CPlayfair%2BDisplay%3A400%2C700%2C900%26subset%3Dlatin%2Clatin-ext&amp;ver=1.0.0'
         media='all' />
     <link rel='stylesheet' id='layers-css' href='css/themes/adsmo/assets/revolution/css/layersb1bb.css?ver=5.3.8'
         media='all' />
