@@ -136,7 +136,7 @@
 
 .bg-secondary-color {
 
-  background: #3d3d68;
+  background: #D7385E;
 
 }
 
@@ -154,7 +154,7 @@
 
 .text-secondary-color {
 
-  color: #3d3d68;
+  color: #D7385E;
 
 }
 
@@ -162,7 +162,7 @@
 
 .heading-text-color {
 
-  color: #3d3d68;
+  color: #D7385E;
 
 }
 
@@ -170,7 +170,7 @@
 
 .bg-gradient-color {
 
-  background: linear-gradient(45deg, #A9294F, #D7385E ) !important;
+  background: linear-gradient(45deg, #A9294F, #604183) !important;
 
 }
 
@@ -262,7 +262,7 @@ ul li {
 
   cursor: pointer;
 
-  color: #3d3d68;
+  color: #D7385E;
 
   position: relative;
 
@@ -488,7 +488,7 @@ ul li {
 
 .cs-btn-one.btn-secordary-color {
 
-  background: #3d3d68;
+  background: #D7385E;
 
 }
 
@@ -506,13 +506,13 @@ ul li {
 
 .cs-btn-one.btn-primary-color:hover {
 
-  background: #3d3d68;
+  background: #D7385E;
 
 }
 
 .cs-btn-one.btn-gradient-color {
 
-  background: linear-gradient(45deg, #A9294F, #D7385E ) !important;
+  background: linear-gradient(45deg, #A9294F, #604183) !important;
 
   color: #fff;
 
@@ -520,7 +520,7 @@ ul li {
 
 .cs-btn-one.btn-gradient-color:hover {
 
-  background: linear-gradient(-20deg, #A9294F, #D7385E ) !important;
+  background: linear-gradient(-20deg, #A9294F, #604183) !important;
 
 }
 
@@ -576,7 +576,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
 
-  color: #3d3d68;
+  color: #D7385E;
 
   margin: 0;
 
@@ -1716,7 +1716,7 @@ img {
 
   width: 50px;
 
-  background: linear-gradient(45deg, #A9294F, #D7385E ) !important;
+  background: linear-gradient(45deg, #A9294F, #604183) !important;
 
   -moz-transform: translate(0, -50%);
 
@@ -1880,7 +1880,7 @@ img {
 
   font-weight: 600;
 
-  color: #3d3d68;
+  color: #D7385E;
 
 }
 
@@ -1922,7 +1922,7 @@ img {
 
   height: 6px;
 
-  background: linear-gradient(-20deg, #A9294F, #D7385E ) !important;
+  background: linear-gradient(-20deg, #A9294F, #604183) !important;
 
   -webkit-transition: all 2000ms ease;
 
@@ -3764,7 +3764,7 @@ img {
 
   font-family: "Montserrat", sans-serif;
 
-  color: #3d3d68;
+  color: #D7385E;
 
   height: auto;
 
@@ -3854,7 +3854,7 @@ textarea.form-control {
 
   background-color: #fff;
 
-  color: #3d3d68;
+  color: #D7385E;
 
   height: 52px;
 
@@ -4156,7 +4156,7 @@ select {
 
 .subtitle-block {
 
-  background: linear-gradient(45deg, #A9294F, #D7385E ) !important;
+  background: linear-gradient(45deg, #A9294F, #604183) !important;
 
   display: inline-block;
 
@@ -4202,7 +4202,7 @@ select {
 
 .about-icon {
 
-  color: #3d3d68;
+  color: #D7385E;
 
   font-weight: 600;
 
@@ -4480,7 +4480,7 @@ select {
 
 .project-section .project-filter ul li:hover, .project-section .project-filter ul li.active {
 
-  background: linear-gradient(45deg, #A9294F, #D7385E ) !important;
+  background: linear-gradient(45deg, #A9294F, #604183) !important;
 
   color: #fff;
 
@@ -4540,7 +4540,7 @@ select {
 
   transform: translate(0, 100%);
 
-  background: linear-gradient(45deg, #A9294F, #D7385E ) !important;
+  background: linear-gradient(45deg, #A9294F, #604183) !important;
 
 }
 
@@ -4564,7 +4564,7 @@ select {
 
   height: 48px;
 
-  background: linear-gradient(45deg, #A9294F, #D7385E ) !important;
+  background: linear-gradient(45deg, #A9294F, #604183) !important;
 
   text-align: center;
 
@@ -4786,7 +4786,7 @@ select {
 
   font-weight: 500;
 
-  background: linear-gradient(45deg, #A9294F, #D7385E ) !important;
+  background: linear-gradient(45deg, #A9294F, #604183) !important;
 
   width: 45px;
 
@@ -5334,7 +5334,7 @@ select {
 
   border-radius: 4px;
 
-  background: linear-gradient(45deg, #A9294F, #D7385E ) !important;
+  background: linear-gradient(45deg, #A9294F, #604183) !important;
 
 }
 
@@ -5440,7 +5440,7 @@ select {
 
 .team-block .team-bottom-part:after {
 
-  background: linear-gradient(45deg, #A9294F, #D7385E ) !important;
+  background: linear-gradient(45deg, #A9294F, #604183) !important;
 
   height: 5px;
 
@@ -5512,7 +5512,7 @@ select {
 
   position: absolute;
 
-  background: linear-gradient(45deg, #A9294F, #D7385E ) !important;
+  background: linear-gradient(45deg, #A9294F, #604183) !important;
 
   bottom: -65px;
 
@@ -5536,7 +5536,7 @@ select {
 
   position: absolute;
 
-  background: linear-gradient(45deg, #A9294F, #D7385E ) !important;
+  background: linear-gradient(45deg, #A9294F, #604183) !important;
 
   bottom: -70px;
 
@@ -5558,7 +5558,7 @@ select {
 
   display: inline-block;
 
-  background: linear-gradient(45deg, #A9294F, #D7385E ) !important;
+  background: linear-gradient(45deg, #A9294F, #604183) !important;
 
   padding: 3px;
 
@@ -5690,7 +5690,7 @@ select {
 
   line-height: 40px;
 
-  color: #3d3d68;
+  color: #D7385E;
 
   font-weight: 400;
 
@@ -5704,7 +5704,7 @@ select {
 
   content: "";
 
-  background: linear-gradient(45deg, #A9294F, #D7385E ) !important;
+  background: linear-gradient(45deg, #A9294F, #604183) !important;
 
   height: 4px;
 
@@ -5726,7 +5726,7 @@ select {
 
   line-height: 40px;
 
-  color: #3d3d68;
+  color: #D7385E;
 
   font-weight: 600;
 
@@ -8486,7 +8486,7 @@ select {
 
   content: "";
 
-  background: linear-gradient(45deg, #A9294F, #D7385E ) !important;
+  background: linear-gradient(45deg, #A9294F, #604183) !important;
 
   height: 5px;
 

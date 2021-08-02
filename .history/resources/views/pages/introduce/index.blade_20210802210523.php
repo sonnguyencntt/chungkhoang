@@ -145,7 +145,7 @@
 
 
                                             <section class="pdt-110 pdb-50 section-white-typo"
-                                                data-background="http://127.0.0.1:8000/shtheme.org/demosd/enexus/wp-content/uploads/2020/02/8.jpg"
+                                                data-background="https://i.kinja-img.com/gawker-media/image/upload/c_fit,f_auto,g_center,pg_1,q_60,w_1600/rhk5hdmr3vdfmifu8g89.jpg"
                                                 data-overlay-dark="3">
 
 

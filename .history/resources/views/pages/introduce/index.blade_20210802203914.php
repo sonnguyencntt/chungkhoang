@@ -83,7 +83,7 @@
                                                         <div class="col-md-12 col-xl-6 wow fadeInLeft"
                                                             data-wow-delay="0ms" data-wow-duration="1000ms">
                                                             <img class="image-link mrb-lg-50 mrt-5"
-                                                                src="https://i.pinimg.com/564x/e3/61/6f/e3616f369fb4746a75fe74d1c5008f25.jpg"
+                                                                src="shtheme.org/demosd/enexus/css/uploads/2020/02/about1.png"
                                                                 alt="">
                                                         </div>
 
@@ -145,7 +145,7 @@
 
 
                                             <section class="pdt-110 pdb-50 section-white-typo"
-                                                data-background="http://127.0.0.1:8000/shtheme.org/demosd/enexus/wp-content/uploads/2020/02/8.jpg"
+                                                data-background="http://shtheme.org/demosd/enexus/css/uploads/2020/02/8.jpg"
                                                 data-overlay-dark="3">
 
 
@@ -366,7 +366,7 @@
 
                                                     <div class="container">
 
-                                                        <div class="row" style="justify-content: center;">
+                                                        <div class="row" style="jusconten">
 
 
                                                             <div class="col-md-6 col-lg-3 col-xl-3">

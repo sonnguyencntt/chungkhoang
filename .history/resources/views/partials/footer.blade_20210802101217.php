@@ -18,7 +18,7 @@
 <div class="row">
 <div class="col-xl-12">
 <div class="text-center">
-        <span class="text-light-gray">© Bản quyền thuộc về Hoàng Quân | Cung cấp bởi Chứng Khoán Hoàng Quân</span>
+        <span class="text-light-gray">© Bản quyền thuộc về Hoàng Quân | Cung cấp bởi Hoàng Quân Company</span>
     </div>
 </div>
 </div>
