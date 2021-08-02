@@ -73,68 +73,16 @@
                                                     <div class="row">
 
 
-                                                        <div class="col-lg-6 p-0" style="padding: 80px 0 0 30px !important;">
+                                                        <div class="col-lg-6 p-0" style="pa">
 
 
 
                                                             
-                                                                <h2 class="mrb-20" style="margin-bottom: 55px;">Hoạt động của chúng tôi</h2>
+                                                                <h2 class="mrb-20">Hoạt động của chúng tôi</h2>
                                                                 <div class="faq-block">
 
                                                                     <div class="accordion">
 
-
-                                                                        <div class="accordion-item">
-
-
-                                                                            <div class="accordion-header">
-
-                                                                                <h5 class="title">Làm sao để tôi có thể nhận tư vấn từ
-                                                                                    công ty?</h5>
-
-                                                                                <span class="fa fa-minus"></span>
-
-                                                                            </div>
-
-
-
-                                                                            <div class="accordion-body">
-
-                                                                                <p>Doanh nghiệp, cá nhân hay tổ chức muốn tư vấn đầu tư
-                                                                                    tài chính, chứng khoán từ Hoàng Quân Company vui
-                                                                                    lòng liên hệ với chúng tôi qua Hotline hoặc gửi
-                                                                                    thông tin yêu cầu về Email doanh nghiệp.</p>
-
-                                                                            </div>
-
-
-                                                                        </div>
-
-                                                                        <div class="accordion-item">
-
-
-                                                                            <div class="accordion-header">
-
-                                                                                <h5 class="title">Làm sao để tôi có thể nhận tư vấn từ
-                                                                                    công ty?</h5>
-
-                                                                                <span class="fa fa-minus"></span>
-
-                                                                            </div>
-
-
-
-                                                                            <div class="accordion-body">
-
-                                                                                <p>Doanh nghiệp, cá nhân hay tổ chức muốn tư vấn đầu tư
-                                                                                    tài chính, chứng khoán từ Hoàng Quân Company vui
-                                                                                    lòng liên hệ với chúng tôi qua Hotline hoặc gửi
-                                                                                    thông tin yêu cầu về Email doanh nghiệp.</p>
-
-                                                                            </div>
-
-
-                                                                        </div>
 
                                                                         <div class="accordion-item">
 
@@ -232,7 +180,8 @@
                                                             <div class="contact-form divider-gap contact-from-bg">
 
 
-                                                                <h2 class="mrb-40 solid-line-bottom">Liên hệ với chúng tôi</h2>
+                                                                <h2 class="mrb-40 solid-line-bottom">LIÊN HỆ VỚI Hoàng
+                                                                    Quân NGAY!</h2>
 
 
 
@@ -256,9 +205,9 @@
                                                                                 <span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" /></span>
                                                                             </label></p>
                                                                         <p><label> Nội Dung<br />
-                                                                                <span class="wpcf7-form-control-wrap your-message"><textarea style="height: 100px !important;" name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span>
+                                                                                <span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span>
                                                                             </label></p>
-                                                                        <p><input style ="height: 40px; width: 100px; background: #E41F7A; color:#fff; border-radius: 30px;" type="submit" value="Gửi" class="wpcf7-form-control wpcf7-submit" />
+                                                                        <p><input type="submit" value="GỬI" class="wpcf7-form-control wpcf7-submit" />
                                                                         </p>
                                                                         <div class="wpcf7-response-output wpcf7-display-none">
                                                                         </div>

@@ -1,3 +1,31 @@
+<style>
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+</style>
+
 <header class="header-style-two">
     <div class="header-wrapper">
         <div class="header-top-area bg-secondary-color d-none d-lg-block">
@@ -49,22 +77,19 @@
                                             Thiệu</a>
                                     </li>
                                     <li id="menu-item-467" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-467">
-                                        <a class="dropmenu" title="Tin Tức" href="{{route("blog.index")}}" class="page-scroll">Bài Viết
-                                        <i class="fa fa-caret-down"></i>
-                                        </a>
-                                        <ul role="menu" class=" dropDown sub-menu">
-                                            <li id="menu-item-96" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-39 current_page_item menu-item-96 active"><a title="Bảng tin chứng khoán" href="https://tuvan01.adsmoweb.com/" class="page-scroll">Bảng tin chứng khoán</a></li>
-                                            <li id="menu-item-97" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-97"><a title="Kiến thức đầu tư" href="https://tuvan01.adsmoweb.com/home-2/" class="page-scroll">Kiến thức đầu tư</a></li>
-                                            <li id="menu-item-98" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-98"><a title="Chiến lược và khuyến nghị" href="https://tuvan01.adsmoweb.com/home-3/" class="page-scroll">Chiến lược và khuyến nghị</a></li>
-                                        </ul>
+                                        <a title="Tin Tức" href="{{route("blog.index")}}" class="page-scroll">Bài Viết</a>
                                     </li>
                                     <li id="menu-item-110" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-110">
-                                        <a  title="Liên Hệ" href="{{route("contact.index")}}" class="page-scroll">Mở tài khoản</a>
+                                        <a class="dropdowm" title="Liên Hệ" href="{{route("contact.index")}}" class="page-scroll">Mở tài khoản
+                                            <i class="fa fa-caret-down"></i>
+                                        </a>
+                                        <div class="dropdown-content">
+                                            <a href="#">Link 1</a>
+                                            <a href="#">Link 2</a>
+                                            <a href="#">Link 3</a>
+                                        </div>
                                     </li>
                                 </ul>
-                                
-
-                                    
                             </nav>
                         </div>
                         <div class="header-searchbox-style-two">

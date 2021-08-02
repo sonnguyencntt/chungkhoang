@@ -49,22 +49,19 @@
                                             Thiệu</a>
                                     </li>
                                     <li id="menu-item-467" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-467">
-                                        <a class="dropmenu" title="Tin Tức" href="{{route("blog.index")}}" class="page-scroll">Bài Viết
-                                        <i class="fa fa-caret-down"></i>
-                                        </a>
-                                        <ul role="menu" class=" dropDown sub-menu">
-                                            <li id="menu-item-96" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-39 current_page_item menu-item-96 active"><a title="Bảng tin chứng khoán" href="https://tuvan01.adsmoweb.com/" class="page-scroll">Bảng tin chứng khoán</a></li>
-                                            <li id="menu-item-97" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-97"><a title="Kiến thức đầu tư" href="https://tuvan01.adsmoweb.com/home-2/" class="page-scroll">Kiến thức đầu tư</a></li>
-                                            <li id="menu-item-98" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-98"><a title="Chiến lược và khuyến nghị" href="https://tuvan01.adsmoweb.com/home-3/" class="page-scroll">Chiến lược và khuyến nghị</a></li>
-                                        </ul>
+                                        <a title="Tin Tức" href="{{route("blog.index")}}" class="page-scroll">Bài Viết</a>
                                     </li>
                                     <li id="menu-item-110" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-110">
-                                        <a  title="Liên Hệ" href="{{route("contact.index")}}" class="page-scroll">Mở tài khoản</a>
+                                        <a class="dropdown" title="Liên Hệ" href="{{route("contact.index")}}" class="page-scroll">Mở tài khoản
+                                            <!-- <i class="fa fa-caret-down"></i> -->
+                                        </a>
+                                        <ul role="menu" class=" dropDown sub-menu">
+                                            <li id="menu-item-96" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-39 current_page_item menu-item-96 active"><a title="Layout 1" href="https://tuvan01.adsmoweb.com/" class="page-scroll">Layout 1</a></li>
+                                            <li id="menu-item-97" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-97"><a title="Layout 2" href="https://tuvan01.adsmoweb.com/home-2/" class="page-scroll">Layout 2</a></li>
+                                            <li id="menu-item-98" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-98"><a title="Layout 3" href="https://tuvan01.adsmoweb.com/home-3/" class="page-scroll">Layout 3</a></li>
+                                        </ul>
                                     </li>
                                 </ul>
-                                
-
-                                    
                             </nav>
                         </div>
                         <div class="header-searchbox-style-two">

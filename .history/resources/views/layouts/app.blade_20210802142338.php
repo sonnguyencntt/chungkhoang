@@ -22,7 +22,7 @@
         media='all' />
     <link rel='stylesheet' id='navigation-css'
         href='css/themes/adsmo/assets/revolution/css/navigationb1bb.css?ver=5.3.8' media='all' />
-    <link rel='stylesheet' href='css/style.css'>
+    <link rel='stylesheet' href='/style.css'>
 
 
 </head>

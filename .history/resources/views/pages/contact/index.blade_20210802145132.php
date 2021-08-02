@@ -72,69 +72,70 @@
 
                                                     <div class="row">
 
+                                                        <div class="col-lg-6 p-0">
 
-                                                        <div class="col-lg-6 p-0" style="padding: 80px 0 0 30px !important;">
+                                                            <div class="contact-form divider-gap contact-from-bg">
+
+
+                                                                <h2 class="mrb-40 solid-line-bottom">LIÊN HỆ VỚI Hoàng
+                                                                    Quân NGAY!</h2>
 
 
 
-                                                            
-                                                                <h2 class="mrb-20" style="margin-bottom: 55px;">Hoạt động của chúng tôi</h2>
+                                                                <div role="form" class="wpcf7" id="wpcf7-f6-p61-o1" lang="vi" dir="ltr">
+                                                                    <div class="screen-reader-response"></div>
+                                                                    <form action="https://tuvan01.adsmoweb.com/lien-he/#wpcf7-f6-p61-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+                                                                        <div style="display: none;">
+                                                                            <input type="hidden" name="_wpcf7" value="6" />
+                                                                            <input type="hidden" name="_wpcf7_version" value="5.1.7" />
+                                                                            <input type="hidden" name="_wpcf7_locale" value="vi" />
+                                                                            <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f6-p61-o1" />
+                                                                            <input type="hidden" name="_wpcf7_container_post" value="61" />
+                                                                        </div>
+                                                                        <p><label> Họ Tên (bắt buộc)<br />
+                                                                                <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" /></span>
+                                                                            </label></p>
+                                                                        <p><label> Email (bắt buộc)<br />
+                                                                                <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" /></span>
+                                                                            </label></p>
+                                                                        <p><label> Dịch vụ tư vấn<br />
+                                                                                <span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" /></span>
+                                                                            </label></p>
+                                                                        <p><label> Nội Dung<br />
+                                                                                <span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span>
+                                                                            </label></p>
+                                                                        <p><input type="submit" value="GỬI" class="wpcf7-form-control wpcf7-submit" />
+                                                                        </p>
+                                                                        <div class="wpcf7-response-output wpcf7-display-none">
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+
+
+
+                                                        <div class="col-lg-6 p-0">
+
+
+
+                                                            <div class="col-md-12 col-lg-7 col-xl-7 wow fadeInLeft mrb-md-60" data-wow-delay="0ms" data-wow-duration="1000ms">
+
+
+                                                                <h5 class="subtitle-block">FAQ's</h5>
+
+
+
+                                                                <h2 class="mrb-20">CÂU HỎI THƯỜNG GẶP</h2>
+
+
+
                                                                 <div class="faq-block">
 
                                                                     <div class="accordion">
 
-
-                                                                        <div class="accordion-item">
-
-
-                                                                            <div class="accordion-header">
-
-                                                                                <h5 class="title">Làm sao để tôi có thể nhận tư vấn từ
-                                                                                    công ty?</h5>
-
-                                                                                <span class="fa fa-minus"></span>
-
-                                                                            </div>
-
-
-
-                                                                            <div class="accordion-body">
-
-                                                                                <p>Doanh nghiệp, cá nhân hay tổ chức muốn tư vấn đầu tư
-                                                                                    tài chính, chứng khoán từ Hoàng Quân Company vui
-                                                                                    lòng liên hệ với chúng tôi qua Hotline hoặc gửi
-                                                                                    thông tin yêu cầu về Email doanh nghiệp.</p>
-
-                                                                            </div>
-
-
-                                                                        </div>
-
-                                                                        <div class="accordion-item">
-
-
-                                                                            <div class="accordion-header">
-
-                                                                                <h5 class="title">Làm sao để tôi có thể nhận tư vấn từ
-                                                                                    công ty?</h5>
-
-                                                                                <span class="fa fa-minus"></span>
-
-                                                                            </div>
-
-
-
-                                                                            <div class="accordion-body">
-
-                                                                                <p>Doanh nghiệp, cá nhân hay tổ chức muốn tư vấn đầu tư
-                                                                                    tài chính, chứng khoán từ Hoàng Quân Company vui
-                                                                                    lòng liên hệ với chúng tôi qua Hotline hoặc gửi
-                                                                                    thông tin yêu cầu về Email doanh nghiệp.</p>
-
-                                                                            </div>
-
-
-                                                                        </div>
 
                                                                         <div class="accordion-item">
 
@@ -221,57 +222,11 @@
 
                                                                 </div>
 
-                                                            
-
-
-
-                                                        </div>
-
-                                                        <div class="col-lg-6 p-0">
-
-                                                            <div class="contact-form divider-gap contact-from-bg">
-
-
-                                                                <h2 class="mrb-40 solid-line-bottom">Liên hệ với chúng tôi</h2>
-
-
-
-                                                                <div role="form" class="wpcf7" id="wpcf7-f6-p61-o1" lang="vi" dir="ltr">
-                                                                    <div class="screen-reader-response"></div>
-                                                                    <form action="https://tuvan01.adsmoweb.com/lien-he/#wpcf7-f6-p61-o1" method="post" class="wpcf7-form" novalidate="novalidate">
-                                                                        <div style="display: none;">
-                                                                            <input type="hidden" name="_wpcf7" value="6" />
-                                                                            <input type="hidden" name="_wpcf7_version" value="5.1.7" />
-                                                                            <input type="hidden" name="_wpcf7_locale" value="vi" />
-                                                                            <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f6-p61-o1" />
-                                                                            <input type="hidden" name="_wpcf7_container_post" value="61" />
-                                                                        </div>
-                                                                        <p><label> Họ Tên (bắt buộc)<br />
-                                                                                <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" /></span>
-                                                                            </label></p>
-                                                                        <p><label> Email (bắt buộc)<br />
-                                                                                <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" /></span>
-                                                                            </label></p>
-                                                                        <p><label> Dịch vụ tư vấn<br />
-                                                                                <span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" /></span>
-                                                                            </label></p>
-                                                                        <p><label> Nội Dung<br />
-                                                                                <span class="wpcf7-form-control-wrap your-message"><textarea style="height: 100px !important;" name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span>
-                                                                            </label></p>
-                                                                        <p><input style ="height: 40px; width: 100px; background: #E41F7A; color:#fff; border-radius: 30px;" type="submit" value="Gửi" class="wpcf7-form-control wpcf7-submit" />
-                                                                        </p>
-                                                                        <div class="wpcf7-response-output wpcf7-display-none">
-                                                                        </div>
-                                                                    </form>
-                                                                </div>
                                                             </div>
 
+
+
                                                         </div>
-
-
-
-
-
 
                                                     </div>
 

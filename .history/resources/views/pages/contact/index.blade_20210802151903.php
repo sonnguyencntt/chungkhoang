@@ -258,7 +258,7 @@
                                                                         <p><label> Nội Dung<br />
                                                                                 <span class="wpcf7-form-control-wrap your-message"><textarea style="height: 100px !important;" name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span>
                                                                             </label></p>
-                                                                        <p><input style ="height: 40px; width: 100px; background: #E41F7A; color:#fff; border-radius: 30px;" type="submit" value="Gửi" class="wpcf7-form-control wpcf7-submit" />
+                                                                        <p><input style ="height: 40px; width: 100px; background: #E41F7A; color:#fff; boder-raider: 30px" type="submit" value="Gửi" class="wpcf7-form-control wpcf7-submit" />
                                                                         </p>
                                                                         <div class="wpcf7-response-output wpcf7-display-none">
                                                                         </div>
