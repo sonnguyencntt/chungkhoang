@@ -383,15 +383,15 @@
 
                                                                         <ul class="social-list vertical-style list-sm">
 
-                                                                            <li><a href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                                                                            <li><a href="https://facebook.com/"><i class="fa fa-facebook"></i></a>
                                                                             </li>
 
-                                                                            <li><a href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                                                                            <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
                                                                             </li>
 
 
 
-                                                                            <li><a href="http://instagram/"><i class="fa fa-google-plus"></i></a>
+                                                                            <li><a href="https://instagram/"><i class="fa fa-google-plus"></i></a>
                                                                             </li>
 
                                                                         </ul>
@@ -422,15 +422,15 @@
 
                                                                         <ul class="social-list vertical-style list-sm">
 
-                                                                            <li><a href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                                                                            <li><a href="https://facebook.com/"><i class="fa fa-facebook"></i></a>
                                                                             </li>
 
-                                                                            <li><a href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                                                                            <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
                                                                             </li>
 
 
 
-                                                                            <li><a href="http://instagram/"><i class="fa fa-google-plus"></i></a>
+                                                                            <li><a href="https://instagram/"><i class="fa fa-google-plus"></i></a>
                                                                             </li>
 
                                                                         </ul>
@@ -451,93 +451,7 @@
                                                             </div>
 
 
-                                                            <!-- <div class="col-md-6 col-lg-3 col-xl-3">
-
-                <div class="team-block mrb-30">
-
-                    <div class="team-upper-part">
-
-                        <img class="img-full"
-                            src="css/uploads/2020/02/team2.jpg" alt="">
-
-                        <ul class="social-list vertical-style list-sm">
-
-                            <li><a href="http://facebook.com/"><i
-                                        class="fa fa-facebook"></i></a>
-                            </li>
-
-                            <li><a href="http://twitter.com/"><i
-                                        class="fa fa-twitter"></i></a>
-                            </li>
-
-                          
-
-                            <li><a href="http://instagram/"><i
-                                        class="fa fa-google-plus"></i></a>
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-                    <div class="team-bottom-part text-center">
-
-                        <h4 class="team-title mrb-5"><a
-                                href="../team/nguyen-thi-nga/index.html">Nguyễn
-                                Thị Nga</a></h4>
-
-                        <h6 class="designation">Nhân viên phát triển
-                        </h6>
-
-                    </div>
-
-                </div>
-
-            </div> -->
-
-
-                                                            <!-- <div class="col-md-6 col-lg-3 col-xl-3">
-
-                <div class="team-block mrb-30">
-
-                    <div class="team-upper-part">
-
-                        <img class="img-full"
-                            src="css/uploads/2020/02/team1.jpg" alt="">
-
-                        <ul class="social-list vertical-style list-sm">
-
-                            <li><a href="http://facebook.com/"><i
-                                        class="fa fa-facebook"></i></a>
-                            </li>
-
-                            <li><a href="http://twitter.com/"><i
-                                        class="fa fa-twitter"></i></a>
-                            </li>
-
-                            
-
-                            <li><a href="http://instagram/"><i
-                                        class="fa fa-google-plus"></i></a>
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-                    <div class="team-bottom-part text-center">
-
-                        <h4 class="team-title mrb-5"><a
-                                href="../team/le-van-ha/index.html">Lê
-                                Văn Hà</a></h4>
-
-                        <h6 class="designation">Giám đốc tài chính</h6>
-
-                    </div>
-
-                </div>
-
-            </div> -->
+                                                       
 
 
                                                         </div>
@@ -923,7 +837,7 @@
 
 
 
-                                <section class="request-a-call-back pdt-110 pdb-110" data-background="../shtheme.org/demosd/enexus/css/uploads/2020/02/6.jpg">
+                                <section class="request-a-call-back pdt-110 pdb-110">
 
 
 
@@ -1534,7 +1448,7 @@
 
                                                             <div class="testimonial-thumb">
 
-                                                                <img src="shtheme.org/demosd/enexus/css/uploads/2020/02/testimonial-img1.jpg" alt="">
+                                                                <img src="" alt="">
 
 
                                                             </div>
@@ -1590,7 +1504,7 @@
 
                                                             <div class="testimonial-thumb">
 
-                                                                <img src="shtheme.org/demosd/enexus/css/uploads/2020/02/testimonial-img2.jpg" alt="">
+                                                                <img src="" alt="">
 
 
                                                             </div>
@@ -1645,7 +1559,7 @@
 
                                                             <div class="testimonial-thumb">
 
-                                                                <img src="shtheme.org/demosd/enexus/css/uploads/2020/02/testimonial-img3.jpg" alt="">
+                                                                <img src="" alt="">
 
 
                                                             </div>
@@ -1700,7 +1614,7 @@
 
                                                             <div class="testimonial-thumb">
 
-                                                                <img src="shtheme.org/demosd/enexus/css/uploads/2020/02/testimonial-img4.jpg" alt="">
+                                                                <img src="" alt="">
 
 
                                                             </div>

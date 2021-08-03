@@ -22,7 +22,7 @@
         media='all' />
     <link rel='stylesheet' id='navigation-css'
         href='css/themes/adsmo/assets/revolution/css/navigationb1bb.css?ver=01' media='all' />
-    <link rel='stylesheet' href={{asset('css/style.css?ver=o1')}}>
+    <link rel='stylesheet' href={{asset('css/styles.css?ver=01')}}>
 
 
 </head>
@@ -42,7 +42,7 @@
 
     <script src='css/themes/adsmo/assets/js/jquery.v1.12.4.minb1bb.js?ver=01'></script>
     <script src='css/themes/adsmo/assets/js/bootstrap.minb1bb.js?ver=01'></script>
-    <script src='css/themes/adsmo/assets/js/mainb1bb.js?ver=01'></script>
+    <script src='css/themes/adsmo/assets/js/mainb1bb.js?ver=02'></script>
 
 
 
