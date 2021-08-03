@@ -1,0 +1,13 @@
+@media (max-width: 991px) {
+    .header-searchbox-style-two .show-searchbox a {
+      margin: 0 !important;
+    }
+  
+    .mean-container a.meanmenu-reveal {
+      transform: translateX(-40px) !important;
+      top: 25px !important;
+  
+  }
+  
+  }
+  
