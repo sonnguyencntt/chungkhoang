@@ -11,18 +11,18 @@
     <link rel="shortcut icon" href="#">
     <title>Chứng khoán Hoàng Quân &#8211; Tư vấn đầu tư chứng khoán uy tín</title>
 
-    <link rel='stylesheet' id='enexus-style-css' href='css/themes/adsmo/assets/css/styleb1bb.css?ver=5.3.8'
+    <link rel='stylesheet' id='enexus-style-css' href='css/themes/adsmo/assets/css/styleb1bb.css?ver=01'
         media='all' />
     <link rel='stylesheet' id='enexus-fonts-css'
         href='https://fonts.googleapis.com/css?family=Montserrat%3A300%2C400%2C500%2C600%2C700%2C800%2C900%26display%3Dswap%7CPlayfair%2BDisplay%3A400%2C700%2C900%26subset%3Dlatin%2Clatin-ext&amp;ver=1.0.0'
         media='all' />
-    <link rel='stylesheet' id='layers-css' href='css/themes/adsmo/assets/revolution/css/layersb1bb.css?ver=5.3.8'
+    <link rel='stylesheet' id='layers-css' href='css/themes/adsmo/assets/revolution/css/layersb1bb.css?ver=01'
         media='all' />
-    <link rel='stylesheet' id='settings-css' href='css/themes/adsmo/assets/revolution/css/settingsb1bb.css?ver=5.3.8'
+    <link rel='stylesheet' id='settings-css' href='css/themes/adsmo/assets/revolution/css/settingsb1bb.css?ver=01'
         media='all' />
     <link rel='stylesheet' id='navigation-css'
-        href='css/themes/adsmo/assets/revolution/css/navigationb1bb.css?ver=5.3.8' media='all' />
-    <link rel='stylesheet' href={{asset('css/style.css')}}>
+        href='css/themes/adsmo/assets/revolution/css/navigationb1bb.css?ver=01' media='all' />
+    <link rel='stylesheet' href={{asset('css/style.css?ver=o1')}}>
 
 
 </head>
@@ -40,43 +40,43 @@
 
 
 
-    <script src='css/themes/adsmo/assets/js/jquery.v1.12.4.minb1bb.js?ver=5.3.8'></script>
-    <script src='css/themes/adsmo/assets/js/bootstrap.minb1bb.js?ver=5.3.8'></script>
-    <script src='css/themes/adsmo/assets/js/mainb1bb.js?ver=5.3.8'></script>
+    <script src='css/themes/adsmo/assets/js/jquery.v1.12.4.minb1bb.js?ver=01'></script>
+    <script src='css/themes/adsmo/assets/js/bootstrap.minb1bb.js?ver=01'></script>
+    <script src='css/themes/adsmo/assets/js/mainb1bb.js?ver=01'></script>
 
 
 
-    <script src='css/themes/adsmo/assets/revolution/js/jquery.themepunch.tools.minb1bb.js?ver=5.3.8'></script>
-    <script src='css/themes/adsmo/assets/revolution/js/jquery.themepunch.revolution.minb1bb.js?ver=5.3.8'></script>
-    <script src='css/themes/adsmo/assets/revolution/js/slider_v1b1bb.js?ver=5.3.8'></script>
+    <script src='css/themes/adsmo/assets/revolution/js/jquery.themepunch.tools.minb1bb.js?ver=01'></script>
+    <script src='css/themes/adsmo/assets/revolution/js/jquery.themepunch.revolution.minb1bb.js?ver=01'></script>
+    <script src='css/themes/adsmo/assets/revolution/js/slider_v1b1bb.js?ver=01'></script>
 
 
-    <script src='css/themes/adsmo/assets/revolution/js/extensions/revolution.extension.kenburn.minb1bb.js?ver=5.3.8'>
+    <script src='css/themes/adsmo/assets/revolution/js/extensions/revolution.extension.kenburn.minb1bb.js?ver=01'>
     </script>
-    <script src='css/themes/adsmo/assets/revolution/js/extensions/revolution.extension.layeranimation.minb1bb.js?ver=5.3.8'>
+    <script src='css/themes/adsmo/assets/revolution/js/extensions/revolution.extension.layeranimation.minb1bb.js?ver=01'>
     </script>
-    <script src='css/themes/adsmo/assets/revolution/js/extensions/revolution.extension.migration.minb1bb.js?ver=5.3.8'>
+    <script src='css/themes/adsmo/assets/revolution/js/extensions/revolution.extension.migration.minb1bb.js?ver=01'>
     </script>
-    <script src='css/themes/adsmo/assets/revolution/js/extensions/revolution.extension.navigation.minb1bb.js?ver=5.3.8'>
+    <script src='css/themes/adsmo/assets/revolution/js/extensions/revolution.extension.navigation.minb1bb.js?ver=01'>
     </script>
 
 
-    <script src='css/themes/adsmo/assets/revolution/js/extensions/revolution.extension.parallax.minb1bb.js?ver=5.3.8'>
+    <script src='css/themes/adsmo/assets/revolution/js/extensions/revolution.extension.parallax.minb1bb.js?ver=01'>
     </script>
-    <script src='css/themes/adsmo/assets/revolution/js/extensions/revolution.extension.slideanims.minb1bb.js?ver=5.3.8'>
+    <script src='css/themes/adsmo/assets/revolution/js/extensions/revolution.extension.slideanims.minb1bb.js?ver=01'>
     </script>
-    <script src='css/themes/adsmo/assets/revolution/js/extensions/revolution.extension.video.minb1bb.js?ver=5.3.8'></script>
-    <script src='css/themes/adsmo/assets/js/jquery.magnific-popup.minb1bb.js?ver=5.3.8'></script>
-    <script src='css/themes/adsmo/assets/js/jquery.meanmenu.minb1bb.js?ver=5.3.8'></script>
+    <script src='css/themes/adsmo/assets/revolution/js/extensions/revolution.extension.video.minb1bb.js?ver=01'></script>
+    <script src='css/themes/adsmo/assets/js/jquery.magnific-popup.minb1bb.js?ver=01'></script>
+    <script src='css/themes/adsmo/assets/js/jquery.meanmenu.minb1bb.js?ver=01'></script>
 
 
-    <script src='css/themes/adsmo/assets/js/jquery.scrollUp.minb1bb.js?ver=5.3.8'></script>
-    <script src='css/themes/adsmo/assets/js/owl.carousel.minb1bb.js?ver=5.3.8'></script>
-    <script src='css/themes/adsmo/assets/js/imagesloaded.pkgd.minb1bb.js?ver=5.3.8'></script>
-    <script src='css/themes/adsmo/assets/js/jquery.counterup.minb1bb.js?ver=5.3.8'></script>
-    <script src='css/themes/adsmo/assets/js/isotope.pkgd.minb1bb.js?ver=5.3.8'></script>
+    <script src='css/themes/adsmo/assets/js/jquery.scrollUp.minb1bb.js?ver=01'></script>
+    <script src='css/themes/adsmo/assets/js/owl.carousel.minb1bb.js?ver=01'></script>
+    <script src='css/themes/adsmo/assets/js/imagesloaded.pkgd.minb1bb.js?ver=01'></script>
+    <script src='css/themes/adsmo/assets/js/jquery.counterup.minb1bb.js?ver=01'></script>
+    <script src='css/themes/adsmo/assets/js/isotope.pkgd.minb1bb.js?ver=01'></script>
 
-    <script src='css/themes/adsmo/assets/js/waypoints.minb1bb.js?ver=5.3.8'></script>
+    <script src='css/themes/adsmo/assets/js/waypoints.minb1bb.js?ver=01'></script>
 
 
 
