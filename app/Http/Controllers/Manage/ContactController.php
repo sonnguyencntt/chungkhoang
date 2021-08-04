@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Manage;
-
+use App\Lienhekhachhang;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -14,7 +14,8 @@ class ContactController extends Controller
      */
     public function index()
     {
-        return \view("pages.admin.contact.index");
+        $lienhekhachhang = Lienhekhachhang::all();
+        return \view("pages.admin.contact.index",\compact('$lienhekhachhang'));
     }
 
     /**
@@ -46,7 +47,7 @@ class ContactController extends Controller
      */
     public function show($id)
     {
-        //
+        
     }
 
     /**
@@ -80,6 +81,15 @@ class ContactController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $lienhekhachhang=Lienhekhachhang::find($id);
+        $resuls=$lienhekhachhang->delete();
+            if($resuls)
+            {
+                return ["kết quả "=>"xóa thành công "];
+            }
+            else
+            {
+                return ["kết quả "=>"xóa không thành công "];
+            }
     }
 }
