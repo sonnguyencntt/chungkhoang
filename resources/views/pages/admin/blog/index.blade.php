@@ -216,7 +216,7 @@
     </div>
 @stop
 @section('javascript')
-<script src={{asset("/assets/admin/dist/js/blog.js?ver=03")}}></script>       
+<script src={{asset("/assets/admin/dist/js/blog.js?ver=04")}}></script>       
 
 
 @endsection

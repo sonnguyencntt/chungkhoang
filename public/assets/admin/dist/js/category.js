@@ -35,7 +35,7 @@ var btnCust = '<button type="button" class="btn btn-secondary" title="Add pictur
 
 function validate()
 {
-  if (func.ValidateId(["hinhanh", "tieude" , "iddanhmuc" ,"noidung"], [], []) === true) {
+  if (func.ValidateId(["tendanhmuc" ], [], []) === true) {
     return true
 }
 
@@ -48,24 +48,22 @@ function validate_update()
 
 return false;}
 function removeFunc($id) {
-  $('.alert-remove').html("<p>Bạn có muốn xóa bài viết ID :  " + $id + "?</p>")
-  $("[name = baiviet]").val($id);
+  $('.alert-remove').html("<p>Bạn có muốn xóa danh mục ID :  " + $id + "?</p>")
+  $("[name = danhmuc]").val($id);
 }
 
-$(".remove_blog").on("click", function(e){
+$(".remove_category").on("click", function(e){
   e.preventDefault();
-  var id = $("[name = baiviet]").val();
+  var id = $("[name = danhmuc]").val();
 
-  $('#remove').attr('action', "/manage/blog/"+id).submit();
+  $('#remove').attr('action', "/manage/category/"+id).submit();
 });
 
-function showBlog($id){
-  $(".title-blog > b").text("#"+$id);
-  callApi("/api/manage/blog/"+$id, null, 'GET').done(function (data) {
+function editFunc($id){
+  callApi("/api/manage/category/"+$id, null, 'GET').done(function (data) {
     console.log(data);
     $(".load-lazy-loading").hide();
-    $(".content-blog").html(data[0].noi_dung);
-
+    $(".idanhmuc").val(data)
   })
 
 

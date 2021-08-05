@@ -15,7 +15,7 @@ class BlogController extends Controller
      */
     public function index()
     {
-        return \response()->json(BlogResource::collection(Blog::all()),200);
+        
     }
 
     /**
@@ -37,7 +37,9 @@ class BlogController extends Controller
      */
     public function show($id)
     {
-        //
+        $blog =Blog::where('id_bai_viet', $id)->get();
+
+        return \response()->json(BlogResource::collection($blog),200);
     }
 
     /**

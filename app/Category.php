@@ -9,5 +9,5 @@ class Category extends Model
     protected $table = 'danhmucbaiviet';
     protected $primaryKey = 'id';
 
-    protected $guarded = ['id_danh_muc'];
+    protected $guarded = [];
 }

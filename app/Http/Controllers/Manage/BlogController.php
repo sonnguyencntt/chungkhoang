@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Manage;
-
+use App\Baiviet;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Blog;
@@ -40,6 +40,7 @@ class BlogController extends Controller
      */
     public function store(StoreRequest $request)
     {
+
          
 
             try {
@@ -70,7 +71,11 @@ class BlogController extends Controller
                 \unlink($destinationPath);
                 return \redirect()->route('manage.blog.index')->with(["flag" => "danger", "message" => "Thêm mới dữ liệu không thành công"]);
             }
-        
+
+       
+   
+     
+
     }
 
     /**
@@ -177,6 +182,7 @@ class BlogController extends Controller
      */
     public function destroy($id)
     {
+
         $blog = Blog::where('id_bai_viet', $id)->first();
 
         try {
@@ -187,6 +193,7 @@ class BlogController extends Controller
         } catch (\Throwable $th) {
             return \redirect()->route('manage.blog.index')->with(["flag" => "danger", "message" => "Xóa dữ liệu không thành công"]);
         }
+      
     }
 
   

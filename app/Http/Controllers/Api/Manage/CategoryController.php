@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\Manage;
+namespace App\Http\Controllers\Api\Manage;
 
-use App\Contact;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-
-class ContactController extends Controller
+use App\Category;
+use App\Http\Resources\CategoryResource;
+class CategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,17 +14,6 @@ class ContactController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        $contact = Contact::all();
-        return \view("pages.admin.contact.index", \compact('contact'));
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
     {
         //
     }
@@ -48,17 +37,9 @@ class ContactController extends Controller
      */
     public function show($id)
     {
-    }
+        $category =Category::where('id_danh_muc', $id)->get();
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
+        return \response()->json(CategoryResource::collection($category),200);
     }
 
     /**
@@ -81,11 +62,6 @@ class ContactController extends Controller
      */
     public function destroy($id)
     {
-        try {
-            Contact::where('id_lien_he_khach_hang', $id)->delete();
-            return \redirect()->back()->with(["flag" => "success", "message" => "Xóa dữ liệu thành công"]);
-        } catch (\Throwable $th) {
-            return \redirect()->back()->with(["flag" => "danger", "message" => "Xóa dữ liệu không thành công"]);
-        }
+        //
     }
 }

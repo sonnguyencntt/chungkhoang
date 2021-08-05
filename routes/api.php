@@ -14,8 +14,10 @@ use Illuminate\Http\Request;
 */
 Route::group(['prefix' => 'manage'], function(){
     Route::group(['prefix'=> 'blog'], function(){
-        Route::get('/','Api\Manage\BlogController@index');
+        Route::get('/{blog}','Api\Manage\BlogController@show');
     });
-
+    Route::group(['prefix'=> 'category'], function(){
+        Route::get('/{category}','Api\Manage\CategoryController@show');
+    });
  
 });

@@ -50,6 +50,8 @@ Route::group(['prefix' => 'manage'], function(){
         Route::get('/{blog}/edit','Manage\BlogController@edit')->name('manage.blog.edit');
         Route::put('/{blog}','Manage\BlogController@update')->name('manage.blog.update');
         Route::delete('/{blog}','Manage\BlogController@destroy')->name('manage.blog.destroy');
+        Route::get('/{blog}','Manage\BlogController@show')->name('manage.blog.show');
+
     });
 
     Route::group(['prefix'=> 'category'], function(){
@@ -59,6 +61,8 @@ Route::group(['prefix' => 'manage'], function(){
         Route::get('/{category}/edit','Manage\CategoryController@edit')->name('manage.category.edit');
         Route::put('/{category}','Manage\CategoryController@update')->name('manage.category.update');
         Route::delete('/{category}','Manage\CategoryController@destroy')->name('manage.category.destroy');
+        Route::get('/{category}','Manage\CategoryController@show')->name('manage.category.show');
+
     });
    
 });
