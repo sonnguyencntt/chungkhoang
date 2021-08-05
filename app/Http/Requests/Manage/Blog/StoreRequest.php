@@ -13,7 +13,7 @@ class StoreRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,20 @@ class StoreRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'hinhanh' => 'required|mimes:jpg,jpeg,png,gif|max:2048',
+            'tieude' => 'required|max:100',
+            'noidung' => 'required',
+            'iddanhmuc' => "required"
+        ];
+    }
+    public function messages()
+    {
+        return [
+            'hinhanh.mimes' => 'Chỉ chấp nhận hình thẻ với đuôi .jpg .jpeg .png .gif',
+            'hinhanh.max' => 'Hình thẻ giới hạn dung lượng không quá 2M',
+            'required' => 'Trường :attribute không được để trống',
+            'unique' => 'Đã tồn tại trong danh sách',
+            'tieude.max' => "Nội dung không quá 100 kí tự"
         ];
     }
 }

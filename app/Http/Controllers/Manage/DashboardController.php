@@ -4,7 +4,10 @@ namespace App\Http\Controllers\Manage;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-
+use App\Blog;
+use App\Category;
+use App\Contact;
+use App\User;
 class DashboardController extends Controller
 {
     /**
@@ -14,7 +17,12 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        return \view("pages.admin.dashboard.index");
+        $count_blog = \count(Blog::all());
+        $count_category = \count(Category::all());
+        $count_contact = \count(Contact::all());
+        $count_user = \count(User::all());
+
+        return \view("pages.admin.dashboard.index" , \compact('count_blog' , 'count_category' , 'count_contact' , 'count_user'));
     }
 
     /**

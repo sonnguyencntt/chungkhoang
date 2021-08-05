@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Manage;
 
+use App\Contact;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -14,7 +15,8 @@ class ContactController extends Controller
      */
     public function index()
     {
-        return \view("pages.admin.contact.index");
+        $contact = Contact::all();
+        return \view("pages.admin.contact.index", \compact('contact'));
     }
 
     /**
@@ -46,7 +48,6 @@ class ContactController extends Controller
      */
     public function show($id)
     {
-        //
     }
 
     /**
@@ -80,6 +81,11 @@ class ContactController extends Controller
      */
     public function destroy($id)
     {
-        //
+        try {
+            Contact::where('id_lien_he_khach_hang', $id)->delete();
+            return \redirect()->back()->with(["flag" => "success", "message" => "Xóa dữ liệu thành công"]);
+        } catch (\Throwable $th) {
+            return \redirect()->back()->with(["flag" => "danger", "message" => "Xóa dữ liệu không thành công"]);
+        }
     }
 }

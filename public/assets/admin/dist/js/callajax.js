@@ -1,8 +1,8 @@
-function callApi($url,$data)
+function callApi($url,$data=null,$type="POST")
 {
    return $.ajax({
         url: $url,
-        type: "POST",
+        type: $type,
         dataType: "JSON",
         data: $data
     });

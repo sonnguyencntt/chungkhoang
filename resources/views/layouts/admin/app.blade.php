@@ -76,6 +76,7 @@
   <script src={{asset("assets/admin/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js")}}></script>
 
 
+  @yield('css')
 
 
 </head>]
@@ -105,13 +106,13 @@
 
   </div>
 </body>
-<script src="assets/admin/dist/js/function.js?ver=03"></script>
+<script src={{asset("assets/admin/dist/js/function.js?ver=05")}}></script>
 
-<script src="assets/admin/dist/js/callajax.js"></script>
+<script src={{asset("assets/admin/dist/js/callajax.js?ver=01")}}></script>
 
-<script src="assets/admin/dist/js/chart.js"></script>
+<script src={{asset("assets/admin/dist/js/chart.js")}}></script>
+@yield('javascript')
 
 
 
 </html>
-
