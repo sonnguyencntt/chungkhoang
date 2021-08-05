@@ -25,7 +25,7 @@
             <!-- small box -->
             <div class="small-box bg-aqua">
               <div class="inner">
-                <h3>1</h3>
+                <h3>{{$count_contact}}</h3>
 
                 <p>Khách tư vấn</p>
               </div>
@@ -40,7 +40,7 @@
             <!-- small box -->
             <div class="small-box bg-green">
               <div class="inner">
-                <h3>5</h3>
+                <h3>{{$count_category}}</h3>
 
                 <p>Danh mục</p>
               </div>
@@ -55,7 +55,7 @@
             <!-- small box -->
             <div class="small-box bg-yellow">
               <div class="inner">
-                <h3>4</h3>
+                <h3>{{$count_user}}</h3>
 
                 <p>Tài khoản</p>
               </div>
@@ -70,7 +70,7 @@
             <!-- small box -->
             <div class="small-box bg-red">
               <div class="inner">
-                <h3>9</h3>
+                <h3>{{$count_blog}}</h3>
 
                 <p>Bài viết
 

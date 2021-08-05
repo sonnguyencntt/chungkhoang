@@ -4,9 +4,10 @@ namespace App\Http\Controllers\Manage;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Notifications\SendEmailResetPassword;
 use Illuminate\Support\Facades\Auth;
 use App\User;
+use App\Http\Requests\Manage\Auth\LoginRequest;
+use App\Http\Requests\Manage\Auth\ForgetRequest;
 
 class AuthController extends Controller
 {
@@ -25,34 +26,24 @@ class AuthController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function postLogin(Request $req){
-   
-        $this->validate($req,
-        [
-            'email' => "required|email",
-            'password'=> "required|min:5|max:20"
-        ],
-        [
-            'email.required' => "Vui lòng nhập Email",
-            "email.email" => "Email không đúng định dạng",
-            "password.required" => "Vui lòng nhập mật khẩu",
-            "password.min" => "Mật khẩu ít nhất 6 kí tự",
-            "password.max" => "Mật khẩu không quá 20 kí tự"
-        ]);
-        
-        $credentials = array("email"=>$req->email , "password"=>$req->password);
-        if(\Auth::attempt($credentials)){
-            
-            return redirect()->route("manage.dashboard.index");
+    public function postLogin(LoginRequest $req)
+    {
 
+        $credentials = array("email" => $req->email, "password" => $req->password);
+        if (\Auth::attempt($credentials)) {
+            session_start();
+            $_SESSION['ckfinder_auth'] = true;
+            return redirect()->route("manage.dashboard.index");
+        } else {
+            return \redirect()->back()->with(["flag" => "danger", "message" => "Đăng nhập không thành công"]);
         }
-        else
-        {
-            return \redirect()->back()->with(["flag"=>"danger" , "message"=>"Đăng nhập không thành công"]);        }
     }
 
-    public function postLogout(){
+    public function postLogout()
+    {
         \Auth::logout();
+        session_start();
+        unset($_SESSION['ckfinder_auth']);
         return redirect()->route("manage.auth.index");
     }
 
@@ -61,43 +52,30 @@ class AuthController extends Controller
         return \view("pages.admin.auth.forgot");
     }
 
-    public function postEmail(Request $req){
-        $this->validate($req,
-        [
-            'email' => "required|email",
-        ],
-        [
-            'email.required' => "Vui lòng nhập Email",
-            "email.email" => "Email không đúng định dạng",
-        ]);
+    public function postEmail(ForgetRequest $req)
+    {
+      
         $user =  User::where('email', $req->email)->first();
-        
-        if($user){
+
+        if ($user) {
             $random = \Str::random(8);
             $newPassword = \bcrypt($random);
             $infoResetPassord = [
                 'user' => $user,
                 'newpassword' => $random
             ];
-           
-        try {
-            User::where('email', $req->email)
-            ->update(['mat_khau' => $newPassword]);
-            $user->notify(new SendEmailResetPassword($infoResetPassord));
 
-            return  \redirect()->back()->with(["flag"=>"success" , "message"=>"Gửi Email thành công , Vui lòng kiểm tra email"]);
+            try {
+                User::where('email', $req->email)
+                    ->update(['mat_khau' => $newPassword]);
+                $user->notify(new SendEmailResetPassword($infoResetPassord));
 
-
-        } catch (\Throwable $th) {
-            return \redirect()->back()->with(["flag"=>"danger" , "message"=>"Đã xãy ra lỗi, vui lòng thử lại sau 30 phút"]); 
-        }
-            
-
-            
-        }
-        else
-        {
-            return \redirect()->back()->with(["flag"=>"danger" , "message"=>"Email không tồn tại trong danh sách"]);  
+                return  \redirect()->back()->with(["flag" => "success", "message" => "Gửi Email thành công , Vui lòng kiểm tra email"]);
+            } catch (\Throwable $th) {
+                return \redirect()->back()->with(["flag" => "danger", "message" => "Đã xãy ra lỗi, vui lòng thử lại sau 30 phút"]);
+            }
+        } else {
+            return \redirect()->back()->with(["flag" => "danger", "message" => "Email không tồn tại trong danh sách"]);
         }
     }
 }

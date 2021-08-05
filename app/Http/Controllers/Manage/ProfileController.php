@@ -4,7 +4,9 @@ namespace App\Http\Controllers\Manage;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-
+use App\User;
+use Illuminate\Validation\Rules\Password;
+use App\Http\Requests\Manage\Profile\UpdateRequest;
 class ProfileController extends Controller
 {
     /**
@@ -14,8 +16,9 @@ class ProfileController extends Controller
      */
     public function index()
     {
-        return \view("pages.admin.profile.index");
+        $user = User::where('id_tai_khoan', \Auth::user()->id_tai_khoan)->first();
 
+        return \view("pages.admin.profile.index", \compact('user'));
     }
 
     /**
@@ -68,9 +71,39 @@ class ProfileController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(UpdateRequest $req)
     {
-        //
+
+
+        if (\is_null($req->setting_password) == false) {
+            $this->validate($req, [
+                'setting_password' => 'required|same:setting_cpassword'
+            ], [
+                'setting_password.same' => "Nhập lại mật khẩu sai"
+            ]);
+
+            try {
+                User::where('id_tai_khoan', $req->id_tai_khoan)
+                    ->update(['ho_va_ten' => $req->ho_va_ten , 'sdt'=>$req->sdt , "mat_khau" => bcrypt($req->setting_password)]);
+                    return  \redirect()->back()->with(["flag"=>"success" , "message"=>"Cập nhật dữ liệu thành công"]);
+
+
+            } catch (\Throwable $th) {
+                return  \redirect()->back()->with(["flag"=>"danger" , "message"=>"Cập nhật dữ liệu thất bại, vui lòng kiểm tra lại"]);
+
+            }
+            exit();
+        }
+        try {
+            User::where('id_tai_khoan', $req->id_tai_khoan)
+                ->update(['ho_va_ten' => $req->ho_va_ten , 'sdt'=>$req->sdt]);
+                return  \redirect()->back()->with(["flag"=>"success" , "message"=>"Cập nhật dữ liệu thành công"]);
+
+
+        } catch (\Throwable $th) {
+            return  \redirect()->back()->with(["flag"=>"danger" , "message"=>"Cập nhật dữ liệu thất bại, vui lòng kiểm tra lại"]);
+
+        }
     }
 
     /**

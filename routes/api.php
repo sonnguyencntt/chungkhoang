@@ -12,4 +12,10 @@ use Illuminate\Http\Request;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+Route::group(['prefix' => 'manage'], function(){
+    Route::group(['prefix'=> 'blog'], function(){
+        Route::get('/','Api\Manage\BlogController@index');
+    });
 
+ 
+});

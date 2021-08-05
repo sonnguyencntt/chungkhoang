@@ -64,7 +64,11 @@ var func = {
                     return;
                 }
                 if (data == "setting_password" || data == "setting_cpassword") {
-                    if ($("#" + data).val().replace(/\s+/g, '').length == 0) { }
+                    if ($("#" + data).val().replace(/\s+/g, '').length == 0) { 
+                        $("#" + data).parent().removeClass('has-error').addClass('has-success');
+                        $("#err_" + data).addClass('hide-elm').removeClass('show-elm');
+
+                    }
                     else {
                         if ($.trim($("#setting_password").val()) != $.trim($("#setting_cpassword").val())) {
                             $("#" + data).parent().addClass('has-error');
@@ -139,6 +143,30 @@ var func = {
                         }
                         $("#err_" + data).addClass('hide-elm').removeClass('show-elm');
                     }
+                }
+                else if (data == "noidung" || data == "noidung") {
+                    if ($("#" + data).text().replace(/\s+/g, '').length == 0) { 
+                        $("#" + data).parent().removeClass('has-error').addClass('has-success');
+                        $("#err_" + data).addClass('hide-elm').removeClass('show-elm');
+
+                    }
+                    else {
+                        if ($.trim($("#noidung").text()) != $.trim($("#noidung").text())) {
+                            $("#" + data).parent().addClass('has-error');
+                            $("#err_" + data).removeClass('hide-elm').addClass('show-elm').text('Nhập lại mật khẩu không đúng');
+                            result = false;
+                        }
+                        else {
+                            if (typeof reset !== 'undefined' && reset == true) {
+                                $("#" + data).parent().removeClass('has-success');
+                            }
+                            else {
+                                $("#" + data).parent().removeClass('has-error').addClass('has-success');
+                            }
+                            $("#err_" + data).addClass('hide-elm').removeClass('show-elm');
+                        }
+                    }
+
                 }
                 else {
                     if ((($.trim($("#" + data).val())).replace(/\s+/g, '')).length == 0) {

@@ -40,7 +40,7 @@ Route::group(['prefix' => 'manage'], function(){
 
     Route::group(['prefix'=> 'profile'], function(){
         Route::get('/','Manage\ProfileController@index')->name('manage.profile.index');
-        Route::put('/{profile}','Manage\ProfileController@update')->name('manage.profile.update');
+        Route::put('/update','Manage\ProfileController@update')->name('manage.profile.update');
     });
 
     Route::group(['prefix'=> 'blog'], function(){

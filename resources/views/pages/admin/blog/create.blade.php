@@ -21,74 +21,67 @@
       <!-- Small boxes (Stat box) -->
       <div class="row">
         <div class="col-md-12 col-xs-12">
-    
-          <div id="messages"></div>
-    
+   
     
     
           <div class="box">
             <div class="box-header">
             </div>
-            <form role="form" action="?controller=category&action=insert&type=admin" onsubmit="return validate();" method="post" enctype="multipart/form-data">
-                                    
+            <form role="form" action="{{route("manage.blog.store")}}" onsubmit="return validate();" method="post" enctype="multipart/form-data">
               <div class="box-body">
-              <input type="hidden" value="" class="form-control" id="id" name="id" placeholder="Enter group name" autocomplete="off" required>
               
-                         
     
               <div class="form-group">
     
                 <label for="product_image">Ảnh</label>
                 <div class="kv-avatar">
                   <div class="file-loading">
-                    <input id="product_image" name="product_image" type="file" >
+                    <input id="hinhanh" name="hinhanh" type="file" >
   
                   </div>
                 </div>
-                <p id="err_product_image" class="hide-elm text-danger">Vui lòng chọn ảnh</p>
+                <p id="err_hinhanh" class="hide-elm text-danger">Vui lòng chọn ảnh</p>
   
               </div>
                 
                 <div class="form-group">
                   <label for="product_name" >Ngày đăng</label>
-                  <input type="text" class="form-control" id="product_name" value=" " name="product_name" placeholder="Nhập số điện thoại" autocomplete="off" value="" disabled />
+                  <input type="text" class="form-control" id="ngaydang"  name="ngaydang" placeholder="Tự động" autocomplete="off"  disabled />
     
                 </div>
-    
+  
               
                 <div class="form-group">
                   <label for="product_name" >Tiêu đề</label>
-                  <input type="text" class="form-control" id="product_name" value=" " name="product_name" placeholder="Nhập số lượng" autocomplete="off" value="" />
-                  <p id="err_product_name" class="hide-elm text-danger">Tiêu đề không được để trống</p>
-    
-                </div>
-    
-              
-    
-               
-                
-                <div class="form-group">
-                  <label for="product_name" >Tóm tắt</label>
-                  <input type="text" class="form-control" id="product_name" value=" " name="product_name" placeholder="Nhập địa chỉ" autocomplete="off" value="" />
-                  <p id="err_product_name" class="hide-elm text-danger">Nội dung tóm tắt không được để tróng</p>
+                  <input type="text" class="form-control" id="tieude" name="tieude" placeholder="Nhập tiêu đề" autocomplete="off" />
+                  <p id="err_tieude" class="hide-elm text-danger">Tiêu đề không được để trống</p>
     
                 </div>
                 
                 <div class="form-group">
                     <label for="category">Danh mục</label>
-                    <select class="form-control " id="category"  name="category">
-                      <option value="1" selected >Nhóm</option>
-                      <option value="2" >ABC</option>
-      
+                    <select class="form-control " id="iddanhmuc"  name="iddanhmuc">
+                      <option value="" selected >--- Chọn danh mục ---</option>
+
+                      @if (\count($category) > 0)
+                      @foreach($category as $key => $value)
+                      <option value="{{$value->id_danh_muc}}" >{{$value->ten_danh_muc}}</option>
+                      @endforeach
+  
+                      @else
+                      <option value=""  >--- Không có danh mục nào ---</option>
+
+                      @endif
+
                     </select>
-                    <p id="err_category" class="hide-elm text-danger">Danh mục không được để trống</p>
+                    <p id="err_iddanhmuc" class="hide-elm text-danger">Danh mục không được để trống</p>
       
                   </div>
 
                   <div class="form-group">
                     <label for="category">Nội dung</label>
-                    <textarea name="txtContent" class="form-control " id="editor"></textarea>
-                    <p id="err_category" class="hide-elm text-danger">Nội dung không được để trống</p>
+                    <textarea name="noidung" class="form-control" id="noidung"></textarea>
+                    <p id="err_noidung" class="hide-elm text-danger">Nội dung không được để trống</p>
       
                   </div>
               
@@ -98,8 +91,8 @@
               <!-- /.box-body -->
     
               <div class="box-footer">
-                <button type="submit" class="btn btn-primary">Save Changes</button>
-                <a href="manage_song.php" class="btn btn-warning">Back</a>
+                <button type="submit" class="btn btn-primary">Thêm dữ liệu</button>
+                <a href="manage_song.php" class="btn btn-warning">Trở về</a>
               </div>
             </form>
             <!-- /.box-body -->
@@ -112,8 +105,14 @@
     
     
     </section>
-    <script src="/assets/admin/dist/js/product.js"></script>         <!-- /.content -->
+  </div>
 
-    <script src="{{ asset('assets/admin/ckeditor/ckeditor.js') }}"></script>
-    <script> CKEDITOR.replace('editor'); </script>  </div>
   @stop
+  @section('javascript')
+  <script src={{asset("/assets/admin/dist/js/blog.js")}}></script>       
+
+  <script src={{ asset('assets/admin/ckeditor/ckeditor.js?ver=02') }}></script>
+  <script src={{ asset('assets/admin/ckfinder/ckfinder.js') }}></script>
+
+  <script> CKEDITOR.replace('noidung'); </script>  
+  @endsection
